@@ -28,21 +28,20 @@ void	ft_print_comb2(void)
 	int	a;
 	int	b;
 
-	a = 1;
 	b = 0;
 	while (b < 99)
 	{
+		a = b + 1;
 		while (a <= 99)
 		{
 			p2d_int(b);
 			write(1, " ", 1);
 			p2d_int(a);
 			if (!(a == 99 && b == 98))
-				write(1, &", ", 2);
+				write(1, ", ", 2);
 			a++;
 		}
 		b++;
-		a = b + 1;
 	}
 }
 /*

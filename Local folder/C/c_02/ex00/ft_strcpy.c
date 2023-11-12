@@ -14,15 +14,16 @@
 
 char	*ft_strcpy(char *dest, char *src)
 {
-	char	*ini_pos;
+	int	pos;
 
-	ini_pos = dest;
-	while (*src != '\0')
+	pos = 0;
+	while (src[pos] != '\0')
 	{
-		*dest++ = *src++;
+		dest[pos] = src[pos];
+		pos++;
 	}
-	*dest = '\0';
-	return (ini_pos);
+	dest[pos] = '\0';
+	return (dest);
 }
 /*
 int		main(void)

@@ -14,21 +14,21 @@
 
 int	num(char *str)
 {
-	if (*str >= 48 && *str <= 57)
+	if (*str >= '0' && *str <= '9')
 		return (1);
 	return (0);
 }
 
 int	up(char	*str)
 {
-	if (*str >= 65 && *str <= 90)
+	if (*str >= 'A' && *str <= 'Z')
 		return (1);
 	return (0);
 }
 
 int	low(char *str)
 {
-	if (*str >= 97 && *str <= 122)
+	if (*str >= 'a' && *str <= 'z')
 		return (1);
 	return (0);
 }
@@ -39,20 +39,20 @@ char	*ft_strcapitalize(char *str)
 
 	i = 0;
 	if (low(&str[0]))
-		str[0] = str[0] - 32;
+		str[0] -= 32;
 	while (str[i] != '\0')
 	{
 		if (!(num(&str[i])) && !(up(&str[i])) && !(low(&str[i])))
 		{
 			if (low(&str[i + 1]))
-				str[i + 1] = str[i + 1] - 32;
+				str[i + 1] -= 32;
 		}
 		if (i != 0 && up(&str[i]))
 			if (low(&str[i - 1]) || num(&str[i - 1]) || up(&str[i - 1]))
-				str[i] = str[i] + 32;
+				str[i] += 32;
 		i++;
 	}
-	return (&str[0]);
+	return (str);
 }
 /*
 int main(void)

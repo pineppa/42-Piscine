@@ -24,14 +24,12 @@ void	swap_tab(int *a, int *b)
 
 void	ft_sort_int_tab(int *tab, int size)
 {
-	int	t_i;
 	int	i;
 	int	j;
 
 	i = 0;
 	while (i < size - 1)
 	{
-		t_i = tab[i];
 		j = i + 1;
 		while (j < size)
 		{

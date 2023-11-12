@@ -16,7 +16,7 @@ int	ft_str_is_uppercase(char *str)
 {
 	while (*str)
 	{
-		if (*str < 65 || *str > 90)
+		if (*str < 'A' || *str > 'Z')
 			return (0);
 		str++;
 	}

@@ -39,7 +39,7 @@ char	*ft_strcpy(char *dest, char *src)
 
 void	ft_putstr_non_printable(char *str)
 {
-	unsigned char	uc;
+	unsigned char	uc; // Not sure if this is enough to fix the problem
 
 	while (*str)
 	{

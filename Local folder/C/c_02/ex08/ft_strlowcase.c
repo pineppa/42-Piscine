@@ -14,16 +14,16 @@
 
 char	*ft_strlowcase(char *str)
 {
-	char	*str_start;
+	int	count;
 
-	str_start = str;
-	while (*str)
+	count = 0;
+	while (str[count])
 	{
-		if (*str >= 65 && *str <= 90)
-			*str = *str + 32;
-		str++;
+		if (str[count] >= 'A' && str[count] <= 'Z')
+			str[count] += 32;
+		count++;
 	}
-	return (str_start);
+	return (str);
 }
 /*
 int main(void)

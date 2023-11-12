@@ -16,7 +16,7 @@ int	ft_str_is_numeric(char *str)
 {
 	while (*str)
 	{
-		if (*str < 48 || *str > 57)
+		if (*str < '0' || *str > '9')
 			return (0);
 		str++;
 	}
