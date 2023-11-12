@@ -41,7 +41,7 @@ int	ft_check_base(char *base)
 	while (base[l_base] != '\0')
 	{
 		if (base[l_base] == '+' || base[l_base] == '-' || base[l_base] == ' '
-			base[l_base] < 32 || base[l_base] > 126)
+			|| !(base[l_base] >= 32 && base[l_base] <= 126))
 			return (-1);
 		n = 1;
 		while (base[l_base + n] != '\0')

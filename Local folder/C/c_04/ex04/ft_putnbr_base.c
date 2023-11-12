@@ -30,7 +30,6 @@ void	ft_putnbr_base(int nbr, char *base)
 	l_base = ft_check_base(base);
 	if (l_base < 2)
 		return ;
-	// printf("Merda.. l_base: %d", l_base);
 	if (nbr == -2147483648)
 	{
 		ft_putchar('-');
@@ -64,11 +63,8 @@ int	ft_check_base(char *base)
 	while (base[l_base] != '\0')
 	{
 		if (base[l_base] == '+' || base[l_base] == '-' || base[l_base] == ' '
-			|| base[l_base] < 32 || base[l_base] > 126)
-		{
-		//	printf("What is this? %d", base[l_base]);
+			|| !(base[l_base] >= 32 && base[l_base] <= 126))
 			return (-1);
-		}
 		n = 1;
 		while (base[l_base + n] != '\0')
 		{

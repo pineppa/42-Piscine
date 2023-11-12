@@ -42,7 +42,6 @@ void	ft_sort_params(int argc, char *argv[])
 	char	*swap;
 
 	i = 1;
-	n = i + 1;
 	while (i < argc - 1)
 	{
 		n = i + 1;

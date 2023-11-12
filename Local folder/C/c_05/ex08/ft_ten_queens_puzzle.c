@@ -23,10 +23,7 @@ int	ft_ten_queens_puzzle(void)
 
 	i = 0;
 	while (board[i])
-	{
-		board[i] = '0';
-		i++;
-	}
+		board[i++] = '0';
 	return (ft_solve_pos(board, 0, 0));
 }
 

@@ -16,11 +16,8 @@ int	ft_iterative_factorial(int nb)
 
 	if (nb < 0)
 		return (0);
-	fact = 1;
-	while (nb > 1)
-	{
-		fact = fact * nb;
-		nb--;
-	}
+	fact = nb;
+	while (--nb > 1)
+		fact *= nb;
 	return (fact);
 }
