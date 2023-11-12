@@ -14,28 +14,28 @@
 
 void	ft_print_comb(void)
 {
-	char	num1;
-	char	num2;
-	char	num3;
+	char	n1;
+	char	n2;
+	char	n3;
 
-	num1 = '0';
-	while (num1 < '8')
+	n1 = '0';
+	while (n1 < '8')
 	{
-		num2 = num1 + 1;
-		while (num2 < '9')
+		n2 = n1 + 1;
+		while (n2 < '9')
 		{
-			num3 = num2 + 1;
-			while (num3 <= '9')
+			n3 = n2 + 1;
+			while (n3 <= '9')
 			{
-				write(1, &num1, 1);
-				write(1, &num2, 1);
-				write(1, &num3, 1);
-				if (num1 != 55)
+				write(1, &n1, 1);
+				write(1, &n2, 1);
+				write(1, &n3, 1);
+				if (n1 != 55)
 					write(1, ", ", 2);
-				num3++;
+				n3++;
 			}
-			num2++;
+			n2++;
 		}
-		num1++;
+		n1++;
 	}
 }
