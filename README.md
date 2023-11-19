@@ -3,7 +3,7 @@ Repository containing the work done for the 42 piscine:
 - <u>*Final submission repository*</u>: contains all the project as submitted. Only the required items have originally been pushed.
 - <u>*Exercises*</u>: contains the working files. They may contain wrong versions of the submitted files.
 
-## Final grades - Submission repository
+## Final grades (From memory) - Submission repository
 - Shell:
     - Shell 00: 100%;
     - Shell 01: 100%;
