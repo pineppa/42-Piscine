@@ -1,3 +1,7 @@
+[submodule "Rush 1 - City Skylline Solver"]
+	path = City_Skyline_Solver
+	url = https://github.com/pineppa/City_Skyline_Solver
+	recurse = true
 [submodule "BSQ Project"]
 	path = 42 Piscine - BSQ Project
 	url = https://github.com/pineppa/42-Piscine-BSQ-Project
