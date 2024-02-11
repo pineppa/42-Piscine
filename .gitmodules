@@ -1,4 +1,4 @@
-[submodule "Rush 1 - City Skylline Solver"]
+[submodule "Rush 1 - Skyscrapers Solver"]
 	path = City_Skyline_Solver
 	url = https://github.com/pineppa/City_Skyline_Solver
 	recurse = true
